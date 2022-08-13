@@ -4,7 +4,6 @@ Import the Home and About components from
 the component folder. Assign the default
 path "/" to the Home component and "/about"
 to the About component.
-
 Remember to export the component at the end
 */
 
@@ -13,6 +12,7 @@ import { Routes, Route } from "react-router";
 // Write component imports here //
 import Home from "./components/Home";
 import About from "./components/About";
+import Car from "./components/Car";
 
 // Start Router function here //
 export default function Router() {
@@ -21,6 +21,7 @@ export default function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/car/:id" element={<Car />} />
       </Routes>
     </div>
   );
