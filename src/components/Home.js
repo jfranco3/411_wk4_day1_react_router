@@ -20,7 +20,7 @@ const Home = () => {
           </CardContent>
           <Divider />
           <CardActions style={{ color: "mediumblue" }}>
-            <Link to="/car/${car.id}">See more Details</Link>
+            <Link to={`/car/${car.id}`}>See more Details</Link>
           </CardActions>
         </Card>
       ))}
