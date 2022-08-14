@@ -14,7 +14,7 @@ const Car = () => {
       <Paper className="car-paper">
         <h1>Car Specs</h1>
         <div>
-          <h2>{car.Name}</h2>
+          <h2>{car.Name.toUpperCase()}</h2>
           <Chip label={`id: ${car.id}`} color="primary" />
           <Chip label={`Name: ${car.Name}`} color="primary" />
           <Chip
