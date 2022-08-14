@@ -12,7 +12,6 @@ const Car = () => {
   return (
     <Container maxWidth="sm" className="car-container">
       <Paper className="car-paper">
-        <h1>Car Specs</h1>
         <div>
           <h2>{car.Name.toUpperCase()}</h2>
           <Chip label={`id: ${car.id}`} color="primary" />
